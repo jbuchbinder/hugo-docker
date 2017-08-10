@@ -1,6 +1,6 @@
 # HUGO Website Engine in Docker
 
-**Dockerized version of the HUGO (gohugo.io) executable. This is forked from [giantswarm](https://github.com/giantswarm/hugo-docker), the only differences are:
+**Dockerized version of the HUGO (gohugo.io) executable. This is forked from [giantswarm](https://github.com/giantswarm/hugo-docker), the only differences are:**
 
 1. the addition of asciidoctor
 2. updated alpine version
@@ -10,7 +10,11 @@ More about Hugo: http://www.gohugo.io/
 
 The below "Running" documentation has only been slightly modified from original and is great information.  However, for my use, I really only need to run the hugo server on a preexisting project/site:
 
-    docker run --rm -d -v $(pwd):$(pwd):z  -w $(pwd) -p 1313:1313 --name hugo dswhitley/hugo server --bind=0.0.0.0
+```
+docker run --rm -d -v $(pwd):$(pwd):z  -w $(pwd) \
+           -p 1313:1313 --name hugo \
+           dswhitley/hugo server --bind=0.0.0.0
+```
 
 And now, I can browse to http://localhost:1313 and see the changes I make to my site in realtime.
 
