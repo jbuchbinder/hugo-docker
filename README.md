@@ -8,7 +8,7 @@
 
 More about Hugo: http://www.gohugo.io/
 
-The below "Running" documentation has only been slightly modified from original and is great information.  However, for my use, I really only need to run the hugo server on a preexisting project/site:
+The below "**Running**" documentation has only been slightly modified from original and is great information.  However, for my use, I really only need to run the hugo server on a preexisting project/site:
 
 ```
 docker run --rm -d -v $(pwd):$(pwd):z  -w $(pwd) \
